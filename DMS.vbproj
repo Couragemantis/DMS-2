@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0347B8F6-3905-4DCD-8472-5DD00ADE5068}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DMS.My.MyApplication</StartupObject>
+    <RootNamespace>DMS</RootNamespace>
+    <AssemblyName>DMS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config Forms\DataGrid_Logs_Configuration.Designer.vb">
+      <DependentUpon>DataGrid_Logs_Configuration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config Forms\DataGrid_Logs_Configuration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config Forms\Log_Configuration.Designer.vb">
+      <DependentUpon>Log_Configuration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config Forms\Log_Configuration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\Main.Designer.vb">
+      <DependentUpon>Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\MaintenanceRooms_List.Designer.vb">
+      <DependentUpon>MaintenanceRooms_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\MaintenanceRooms_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\Unavailable_Forms.Designer.vb">
+      <DependentUpon>Unavailable_Forms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\Unavailable_Forms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Main Forms\PaidPayments_List.Designer.vb">
+      <DependentUpon>PaidPayments_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\PaidPayments_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\PendingPayment_List.Designer.vb">
+      <DependentUpon>PendingPayment_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\PendingPayment_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\RatesReport.Designer.vb">
+      <DependentUpon>RatesReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\RatesReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\LOADING.Designer.vb">
+      <DependentUpon>LOADING.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\LOADING.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\Rooms_List.Designer.vb">
+      <DependentUpon>Rooms_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\Rooms_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\Tenant_Archives.Designer.vb">
+      <DependentUpon>Tenant_Archives.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\Tenant_Archives.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verification Form\SettingsVerification.Designer.vb">
+      <DependentUpon>SettingsVerification.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Verification Form\SettingsVerification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Forms\Tenant_List.Designer.vb">
+      <DependentUpon>Tenant_List.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main Forms\Tenant_List.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Config Forms\Select_Log_Source.Designer.vb">
+      <DependentUpon>Select_Log_Source.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Config Forms\Select_Log_Source.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Config Forms\DataGrid_Logs_Configuration.resx">
+      <DependentUpon>DataGrid_Logs_Configuration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config Forms\Log_Configuration.resx">
+      <DependentUpon>Log_Configuration.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\LOADING.resx">
+      <DependentUpon>LOADING.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\Main.resx">
+      <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\MaintenanceRooms_List.resx">
+      <DependentUpon>MaintenanceRooms_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\Unavailable_Forms.resx">
+      <DependentUpon>Unavailable_Forms.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\PaidPayments_List.resx">
+      <DependentUpon>PaidPayments_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\PendingPayment_List.resx">
+      <DependentUpon>PendingPayment_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\RatesReport.resx">
+      <DependentUpon>RatesReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\Rooms_List.resx">
+      <DependentUpon>Rooms_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\Tenant_Archives.resx">
+      <DependentUpon>Tenant_Archives.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verification Form\SettingsVerification.resx">
+      <DependentUpon>SettingsVerification.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Forms\Tenant_List.resx">
+      <DependentUpon>Tenant_List.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Config Forms\Select_Log_Source.resx">
+      <DependentUpon>Select_Log_Source.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Artboard 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Artboard 1_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Artboard 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG_LOGO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DASHBOARD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_DMS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_DMS_BIGGER.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO_DMS_BIGGER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MAINTENANCE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MANAGEMENT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PAYMENT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEARCH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SETTINGS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VISTA_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TITLE_BAR.png" />
+    <None Include="Resources\LOADING_GEAR1.png" />
+    <None Include="Resources\IDLE_LOGO.gif" />
+    <None Include="Resources\Logo_Button.png" />
+    <Content Include="Resources\Management_Settings.bmp" />
+    <Content Include="Resources\Database_Settings.bmp" />
+    <Content Include="Resources\Payments.bmp" />
+    <Content Include="Resources\Room_Maintenance.bmp" />
+    <Content Include="Resources\Room_Assignment.bmp" />
+    <Content Include="Resources\Tenants.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BMP\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
